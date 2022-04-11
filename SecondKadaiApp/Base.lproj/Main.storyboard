@@ -23,9 +23,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="378-QU-7LJ">
-                                <rect key="frame" x="173.5" y="449" width="67" height="31"/>
+                                <rect key="frame" x="178.5" y="449" width="57" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Push"/>
                                 <connections>
                                     <segue destination="cZZ-X5-8Rc" kind="show" id="xAX-TY-pUa"/>
                                 </connections>
@@ -50,6 +50,9 @@
                             <constraint firstItem="dx1-3w-tom" firstAttribute="top" secondItem="Byh-bu-s4P" secondAttribute="bottom" constant="100" id="tlh-ya-f7x"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="dx1-3w-tom" id="oWA-Qu-rI8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,9 +73,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ps8-Az-JZC">
-                                <rect key="frame" x="173.5" y="449" width="67" height="31"/>
+                                <rect key="frame" x="180.5" y="449" width="53" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="戻る"/>
                                 <connections>
                                     <segue destination="HjP-rF-UoJ" kind="unwind" unwindAction="unwind:" id="N7Q-uF-vDt"/>
                                 </connections>
@@ -88,6 +91,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mQ5-CT-rVZ"/>
+                    <connections>
+                        <outlet property="label" destination="hCp-SQ-ge7" id="VUd-Wb-Y31"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jtk-x1-Tlu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="HjP-rF-UoJ" userLabel="Exit" sceneMemberID="exit"/>
